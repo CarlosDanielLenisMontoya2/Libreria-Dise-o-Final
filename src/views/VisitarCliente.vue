@@ -7,13 +7,13 @@
                 <label for="name">Codigo:</label>
                 <input v-model="ClienteFrom.id" type="number" :disabled="true" id="first">
                 <label for="name">Nombres:</label>
-                <input v-model="ClienteFrom.nombre" type="text"  name="name" required id="first" >
+                <input v-model="ClienteFrom.nombre" type="text"  name="name" disabled="true" required id="first" >
     
                 <label for="age">Apellidos:</label>
-                <textarea v-model="ClienteFrom.apellido"  name="books" rows="4" required id="first"></textarea>
+                <textarea v-model="ClienteFrom.apellido"  name="books" rows="4" disabled="true"  required id="first"></textarea>
     
                 <label for="books">Telefono:</label>
-                <input  v-model="ClienteFrom.telefono" type="number" name="age" required id="first">
+                <input  v-model="ClienteFrom.telefono" type="number" name="age" disabled="true" required id="first">
     
     
                 <router-link class="rou" to="/prestamo" >Regresar</router-link>
@@ -86,6 +86,11 @@
     }
     input{
         background-color: #fff;
+        color: black;
+    }
+    textarea{
+        background-color: #fff;
+        
     }
     
     .autor{

@@ -11,6 +11,7 @@
             
             <tr >
                 <th>codigo</th>
+                <th>fecha de Inicio</th>
                 <th>fecha de finalizacion</th>
                 <th>cliente</th>
                 <th>libro</th>
@@ -23,6 +24,7 @@
             <tr v-for="row in prestamoList">
             <td>{{row.id }}</td>
             <td>{{row.fecha}}</td>
+            <td>{{row.fechaF}}</td>
 
             <th>
             <td> {{row.clienteId}}</td>
@@ -127,10 +129,12 @@ export default {
                     this.$http.delete(`v4/delete/${id}`)
                     .then((resp)=> {
                         console.log(resp);
-                        this.getInventary();
+                        this.getRead();
 
                     })
+                    
                 }
+                
             })
             }
     },

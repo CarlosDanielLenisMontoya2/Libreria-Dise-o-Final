@@ -7,16 +7,16 @@
                 <label for="name">Codigo:</label>
                 <input v-model="libroForm.id" type="number" :disabled="true" id="first">
                 <label for="name">Nombres:</label>
-                <input v-model="libroForm.nombre" type="text"  name="name" required id="first">
+                <input v-model="libroForm.nombre" type="text"  name="name" disabled="true" required id="first">
                 
                 <label for="name">Descipcion:</label>
-                <input v-model="libroForm.descripcion" type="text"  name="name" required id="first">
+                <input v-model="libroForm.descripcion" type="text"  name="name" disabled="true" required id="first">
                 
                 <label for="age">Unidades:</label>
-                <textarea v-model="libroForm.unidades"  name="books" rows="4" required id="first"></textarea>
+                <textarea v-model="libroForm.unidades"  name="books" rows="4"disabled="true"  required id="first"></textarea>
     
                 <label for="books">Autor:</label>
-                <input  v-model="libroForm.autorId" type="number"  name="age" required id="first">
+                <input  v-model="libroForm.autorId" type="number"  name="age" disabled="true" required id="first">
     
     
                 <router-link class="rou" to="/prestamo" >Regresar</router-link>
@@ -90,6 +90,11 @@
     }
     input{
         background-color: #fff;
+        color: black;
+    }
+    textarea{
+        background-color: #fff;
+        color: black;
     }
     
     .autor{

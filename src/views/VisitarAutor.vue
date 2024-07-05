@@ -87,6 +87,7 @@
     }
     input{
         background-color: #fff;
+        color: black;
     }
     
     .autor{

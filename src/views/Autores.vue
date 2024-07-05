@@ -1,5 +1,5 @@
 <template>
-    <div class="fondos">
+    <div class="fondoss">
     <div >
         <div class="tables">
 
@@ -133,7 +133,7 @@ export default {
 }
 
 
-.fondos{
+.fondoss{
     background-image: url(../assets/imagenes/cenisas.gif);;
     background-position: center;
     background-repeat: no-repeat;

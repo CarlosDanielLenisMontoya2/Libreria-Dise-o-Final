@@ -1,5 +1,5 @@
 <template>
-<div class="fondos"><div>
+<div class="fondoss"><div>
     <div class="form-container">
         <form>
             <h3 class ="autor">Crear Autor</h3>
@@ -9,7 +9,7 @@
             <label for="age">Edad:</label>
             <input  v-model="inventaryForm.edad" type="number" id="age" name="age" required>
 
-            <label for="books">Libros:</label>
+            <label for="books">Libros Mas Reconocidos:</label>
             <textarea v-model="inventaryForm.libro" id="books" name="books" rows="4" required></textarea>
 
             <button @click.prevent="createAutor()" type="submit">Crear</button>
@@ -67,7 +67,7 @@ export default {
     padding: 0;
 }
 
-.fondos{
+.fondoss{
     background-image: url(../assets/imagenes/cenisas.gif);
     background-position: center;
     background-repeat: no-repeat;

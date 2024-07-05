@@ -15,6 +15,7 @@
                 <th>descripcion</th>
                 <th>unidades</th>
                 <th>autor</th>
+                <th>disponibilidad</th>
                 <th>Acciones</th>
                 </tr>
             
@@ -30,6 +31,7 @@
             <td>{{row.autorId}}</td>
             <button @click.prevent="visitarRouter(row.autorId)" class="accion">Visitar</button>
         </th>
+        <td>{{ row.disponible ? 'Disponible' : 'No disponible' }}</td>
             <td>
                 <button @click.prevent="editRouter(row.id)" class="accion">Editar</button>
                 <button @click.prevent="deleteAutor(row.id)"  class="accion2">Borrar</button>
@@ -137,6 +139,7 @@ export default {
 
 <style lang="scss">
 *{
+
     margin: 0;
     padding: 0;
 }
@@ -152,6 +155,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     
 }
 

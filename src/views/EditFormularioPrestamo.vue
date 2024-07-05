@@ -3,8 +3,10 @@
         <div class="form-container">
             <form>
                 <h3 class ="autor">Crear Prestamo</h3>
-                <label for="name">Fecha De Fiinalizacion:</label>
+                <label for="name">Fecha De Inicio:</label>
                 <input v-model="prestamoFrom.fecha" type="date" id="" name="fecha" required>
+                <label for="name">Fecha De Fiinalizacion:</label>
+                <input v-model="prestamoFrom.fechaF" type="date" id="" name="fecha" required>
                 
                 <label for="age">Cliente:</label>
                 <input  v-model="prestamoFrom.clienteId" type="number" id="age" name="age" required>
@@ -27,6 +29,7 @@
             return{
                 prestamoFrom:{
                     fecha:'',
+                    fechaF:'',
                     clienteId:'',
                     libroId:''
                 },
